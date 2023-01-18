@@ -14,11 +14,13 @@
     <meta name="Description"
           content="《奇缘之旅》是一款三棋盘战斗带有羁绊组合的卡牌游戏。 为了拯救哥哥，拯救世界，年轻的小王子踏上了探秘“魔方世界”的奇幻冒险旅程。">
     <meta name="Keywords" content="奇缘之旅、奇缘之旅手游,奇缘之旅官网,奇缘之旅官方手游、奇缘之旅官方手游下载,奇缘之旅移动版,奇缘之旅手机版,奇缘之旅手游正版,奇缘之旅官方手游测试">
-    <title>在逃王子这次出发救恶龙-奇缘之旅-官方网站-淘金游戏-策略反转，轻松耐玩</title>
+    <title>奇缘之旅-官方网站</title>
     <link rel="stylesheet" href="css/swiper.min.css">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/index.css">
-    <link rel="prefetch" as="image" href="ossweb-img/bg2.jpg">
+    <link rel="prefetch" as="video" href="ossweb-img/video1.mp4">
+    <link rel="prefetch" as="video" href="ossweb-img/video2.mp4">
+    <link rel="prefetch" as="video" href="ossweb-img/video3.mp4">
     <!-- 页面设计：艺次方 | 页面制作：艺次方 | 创建：2023-01-13 -->
     <script>
       //屏幕适应
@@ -51,11 +53,12 @@
             <h2 style="display: none">在逃王子这次出发救恶龙策略反转，轻松耐玩</h2>
             <a class="btn btn-sl hd" href="javascript:;">12+适龄提示</a>
             <div class="btn-box tra">
-                <a class="btn btn-now hd" href="javascript:;">立即预约</a>
-                <a class="btn btn-tap hd" href="javascript:;">TapTap预约</a>
+                <a class="btn btn-now hd" href="https://apps.apple.com/cn/app/id1660191706">立即预约</a>
+                <a class="btn btn-tap hd" href="https://www.taptap.cn/app/196871">TapTap预约</a>
             </div>
         </div>
         <div class="sec sec2 swiper-slide">
+            <img class="car" src="ossweb-img/car.png" alt="马车">
             <div class="cont">
                 <div class="top tra">
                     <h3 class="tit tit1 hd">出发在即·见面有礼</h3>
@@ -78,9 +81,9 @@
                     </ul>
                     <div class="reward-bar">
                         <div class="bar" style="width: 30%"></div>
-                        <span class="percent">预约里程碑：1w</span>
-                        <span class="percent">3w</span>
-                        <span class="percent">10w</span>
+                        <span class="percent">预约里程碑：10w</span>
+                        <span class="percent">20w</span>
+                        <span class="percent">50w</span>
                     </div>
                     <p class="get-text">*预约解锁福利将在公测当日全服统一邮件发放</p>
                 </div>
@@ -92,16 +95,16 @@
             <div class="swiper swiper-role tra">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
-                        <div class="role-name ">
+                        <div class="role-name  tru">
                             <span class="name">斯卡哈</span>
                             <span class="type">暗影之枪</span>
                         </div>
-                        <div class="role-type-lists">
+                        <div class="role-type-lists tru">
                             <span class="role-type">游侠</span>
                             <span class="role-type">精灵</span>
                         </div>
-                        <img class="role" src="ossweb-img/hero-skh.png" alt="斯卡哈">
-                        <div class="skill-lists">
+                        <img class="role trd" src="ossweb-img/hero-skh.png" alt="斯卡哈">
+                        <div class="skill-lists trd">
                             <img src="ossweb-img/skill-icon-skh1.png" class="skill-list" alt="">
                             <img src="ossweb-img/skill-icon-skh2.png" class="skill-list" alt="">
                             <img src="ossweb-img/skill-icon-skh3.png" class="skill-list" alt="">
@@ -210,7 +213,7 @@
             <h3 class="sub-tit sub-tit3 hd tra">预约《奇缘之旅》，公测领取专属定制福利</h3>
             <ul class="video-lists tra">
                 <li class="video-list">
-                    <div class="video-box" path="ossweb-img/video1.mp4">
+                    <div class="video-box" onclick="playVideo(1)" >
                         <img src="ossweb-img/cover1.jpg" alt="cover" class="cover">
                     </div>
                     <div class="video-des-box">
@@ -219,7 +222,7 @@
                     </div>
                 </li>
                 <li class="video-list">
-                    <div class="video-box " path="ossweb-img/video2.mp4">
+                    <div class="video-box " onclick="playVideo(2)">
                         <img src="ossweb-img/cover3.jpg" alt="cover" class="cover">
                     </div>
                     <div class="video-des-box">
@@ -228,7 +231,7 @@
                     </div>
                 </li>
                 <li class="video-list">
-                    <div class="video-box " path="ossweb-img/video3.mp4">
+                    <div class="video-box " onclick="playVideo(3)">
                         <img src="ossweb-img/cover2.jpg" alt="cover" class="cover">
                     </div>
                     <div class="video-des-box">
@@ -295,10 +298,20 @@
     <span class="down-tip">
             下滑查看更多
     </span>
-    <div class="video-dia" >
-        <div class="bg" onclick="closeVideo()"></div>
+    <div class="video-dia video-dia1">
+        <div class="bg" onclick="closeVideo(1)"></div>
         <span class="close-btn hd">close</span>
-        <video src="ossweb-img/video1.mp4" controls></video>
+        <video src="ossweb-img/video1.mp4" playsinline muted autoplay  webkit-playsinline  controls  preload="auto"></video>
+    </div>
+    <div class="video-dia video-dia2" >
+        <div class="bg" onclick="closeVideo(2)"></div>
+        <span class="close-btn hd">close</span>
+        <video src="ossweb-img/video2.mp4" playsinline muted autoplay  webkit-playsinline  controls   preload="auto"></video>
+    </div>
+    <div class="video-dia video-dia3" >
+        <div class="bg" onclick="closeVideo(3)"></div>
+        <span class="close-btn hd">close</span>
+        <video src="ossweb-img/video3.mp4" playsinline muted autoplay  webkit-playsinline  controls   preload="auto"></video>
     </div>
 </div>
 <script src="js/swiper-bundle.min.js"></script>
@@ -332,9 +345,10 @@
       nextEl: '.sec3 .swiper-button-next',
       prevEl: '.sec3 .swiper-button-prev',
     },
-    effect: 'fade',
-    fadeEffect: {
-      crossFade: true,
+    effect : 'flip',
+    flipEffect: {
+      slideShadows : true,
+      limitRotation : true,
     }
   })
 
@@ -399,7 +413,7 @@
   function percent(base, start) {
     var startNum = new Date(start).getTime()
     var nowNum = new Date().getTime()
-    var per = (parseInt((nowNum - startNum) / 200000 + base)) / 1000
+    var per = (parseInt((nowNum - startNum) / 10000 + base)) / 5000
     if (per > 100) {
       per = 100
       $(".reward-lists .reward-list").addClass("on")
@@ -409,18 +423,39 @@
     $(".bar").css("width", per + "%")
   }
 
-  percent(10000, "2022/10/1 16:18:00")
+  percent(100000, "2022/12/29 16:18:00")
 
-  $(".video-box").on("click",function () {
-    var path = $(this).attr("path")
-    $(".video-dia video").attr("src",path)
-    $(".video-dia").show()
-    $(".video-dia video")[0].play()
-  })
-  function closeVideo() {
-    $(".video-dia video")[0].pause()
+
+  function playVideo(i) {
+    $(".video-dia"+i).addClass("on").show()
+    $(".video-dia"+i+" video")[0].volume = 1;
+    $(".video-dia"+i+" video")[0].play()
+  }
+
+  function closeVideo(i) {
+    $(".video-dia"+i+" video")[0].pause()
     $(".video-dia").hide()
   }
+
+  $("body").one("touchmove",function () {
+    console.log(111)
+    $(".video-dia1 video")[0].play()
+    $(".video-dia2 video")[0].play()
+    $(".video-dia3 video")[0].play()
+    setTimeout(function () {
+      $(".video-dia1 video")[0].pause()
+      $(".video-dia2 video")[0].pause()
+      $(".video-dia3 video")[0].pause()
+    },100)
+  })
+
+</script>
+<!--CDN引入-->
+<script src="https://cdn.bootcdn.net/ajax/libs/vConsole/3.9.0/vconsole.min.js"></script>
+<script>
+  // 初始化VConsole
+  var vConsole = new VConsole();
+  console.log('😁🗨');
 </script>
 </body>
 </html>
